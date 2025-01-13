@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding-top: 90px;
+    margin: 0;
+}
+
+.navbar {
+    min-height: 80px; /* Increased height of the navbar */
+}
+
+.navbar-brand{
+    font-family: "Anybody", serif;
+    padding-right: 20px;
+}
+
+.navbar-brand-text{
+    margin-left: 20px;
+}
+
+.navbar-collapse {
+    justify-content: center; /* Center-align links when collapsed */
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0.5rem 0; /* Add spacing between items in collapsed view */
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        align-items: center; /* Center-align the nav links */
+    }
+}
+
+.placeholder {
+    color: white;
+}
+
+.periodic-table-container, .lanthanidesAndActinides {
+    margin: 0 auto;
+    padding: 0 2%;
+    max-width: 98%;
+}
+
+.periodic-table, .lanthanidesAndActinides {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.element {
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background: #f8f9fa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.element .atomic-number {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.element .symbol {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.element:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.element .name {
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.element::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px); /* Extend the pseudo-element to go beyond the border */
+    height: calc(100% + 6px); /* Extend the pseudo-element to go beyond the border */
+    border-radius: 8px; /* Match the element's border-radius */
+    border: 3px solid transparent; /* Initial transparent border */
+    background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffba08, #ffe047);
+    background-size: 300% 300%; /* For gradient movement */
+    z-index: -1; /* Place the animated border behind the element */
+    animation: borderGlow 2s linear infinite; /* Animate the border */
+    opacity: 0; /* Hidden by default */
+}
+
+.element:hover::before {
+    opacity: 1; /* Show the animated border on hover */
+}
+
+@keyframes borderGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .element .name {
+        display: none; /* Hide element names on screens less than 1200px */
+    }
+
+    .periodic-table, .lanthanidesAndActinides {
+        grid-template-columns: repeat(18, minmax(50px, 1fr));
+    }
+
+    .element {
+        height: 70px;
+    }
+
+    .element .symbol {
+        font-size: 1.2rem;
+    }
+
+    .element .atomic-number {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .periodic-table, .lanthanidesAndActinides {
+        grid-template-columns: repeat(18, minmax(40px, 1fr));
+    }
+
+    .element {
+        height: 60px;
+    }
+
+    .element .symbol {
+        font-size: 1rem;
+    }
+
+    .element .atomic-number {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .periodic-table, .lanthanidesAndActinides {
+        grid-template-columns: repeat(18, minmax(30px, 1fr));
+    }
+
+    .element {
+        padding: 5px;
+        height: 50px;
+    }
+
+    .element .symbol {
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    .element .atomic-number {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .periodic-table, .lanthanidesAndActinides {
+        grid-template-columns: repeat(18, minmax(20px, 1fr));
+    }
+
+    .element {
+        height: 40px;
+    }
+
+    .element .symbol {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+
+    .element .atomic-number {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* Group Colors */
+.alkali-metal {
+    background-color: #FFB3B3; /* Light Red */
+}
+
+.alkali-metal:hover {
+    background-color: white; /* Light Red */
+    color: #FFB3B3;
+}
+
+.alkaline-earth-metal {
+    background-color: #FFE4B3; /* Light Orange */
+}
+
+.alkaline-earth-metal:hover {
+    background-color: white; /* Light Orange */
+    color: #ffb938;
+}
+
+.transition-metal {
+    background-color: #D4E4FF; /* Light Blue */
+}
+
+.transition-metal:hover {
+    background-color: white; /* Light Blue */
+    color: #5090ff;
+}
+
+.lanthanoid {
+    background-color: #FFD9FF; /* Light Pink */
+}
+
+.lanthanoid:hover {
+    background-color: white; /* Light Pink */
+    color: #ff7dff;
+}
+
+.actinoid {
+    background-color: #FFD9B3; /* Light Peach */
+}
+
+.actinoid:hover {
+    background-color: white; /* Light Peach */
+    color: #ffa954;
+}
+
+.metalloid {
+    background-color: #FFFFB3; /* Light Yellow */
+}
+
+.metalloid:hover {
+    background-color: white; /* Light Yellow */
+    color: #8b8b00;
+}
+
+.halogen {
+    background-color: #C4FFC4; /* Light Green */
+}
+
+.halogen:hover {
+    background-color: white; /* Light Green */
+    color: #60e160;
+}
+
+.noble-gas {
+    background-color: #B3FFFF; /* Light Cyan */
+}
+
+.noble-gas:hover {
+    background-color: white; /* Light Cyan */
+    color: #45dcdc;
+}
+
+.other-metal {
+    background-color: #FFC4C4; /* Light Salmon */
+}
+
+.other-metal:hover {
+    background-color: white; /* Light Salmon */
+    color: #FFC4C4;
+}
+
+.nonmetal {
+    background-color: #FFFFD4; /* Very Light Yellow */
+}
+
+.nonmetal:hover {
+    background-color: white; /* Very Light Yellow */
+    color: #6c6c40;
+}
+
+/* Add this snippet somewhere in your styles.css */
+.highlight {
+    animation: highlight-animation 1s ease-in-out 0s 3 alternate;
+    /* The above will repeat the highlight effect 3 times over 3 seconds. 
+       Alternatively, you can keep it for exactly 3s with setTimeout to remove the class. */
+    box-shadow: 0 0 10px 5px yellow;
+}
+
+@keyframes highlight-animation {
+    0% {
+        box-shadow: 0 0 10px 5px yellow;
+    }
+    50% {
+        box-shadow: 0 0 20px 10px orange;
+    }
+    100% {
+        box-shadow: 0 0 10px 5px yellow;
+    }
+}
