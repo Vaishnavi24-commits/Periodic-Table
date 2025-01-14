@@ -10,7 +10,8 @@ const elementsData = {
         meltingPoint: "-259.16 °C",
         boilingPoint: "-252.87 °C",
         standardState: "Gas",
-        image: "images/h.jpg"
+        isRadioactive: false,
+        image: "images/h.webp"
     },
     He: {
         atomicNumber: 2,
@@ -23,7 +24,8 @@ const elementsData = {
         meltingPoint: "-272.2 °C",
         boilingPoint: "-268.93 °C",
         standardState: "Gas",
-        image: "images/he.jpg"
+        isRadioactive: false,
+        image: "images/he.webp"
     },
     Li: {
         atomicNumber: 3,
@@ -36,7 +38,8 @@ const elementsData = {
         meltingPoint: "180.5 °C",
         boilingPoint: "1342 °C",
         standardState: "Solid",
-        image: "images/li.jpg"
+        isRadioactive: false,
+        image: "images/li.webp"
     },
     Be: {
         atomicNumber: 4,
@@ -49,7 +52,8 @@ const elementsData = {
         meltingPoint: "1278 °C",
         boilingPoint: "2469 °C",
         standardState: "Solid",
-        image: "images/be.jpg"
+        isRadioactive: false,
+        image: "images/be.webp"
     },
     B: {
         atomicNumber: 5,
@@ -62,7 +66,8 @@ const elementsData = {
         meltingPoint: "2076 °C",
         boilingPoint: "3927 °C",
         standardState: "Solid",
-        image: "images/b.jpg"
+        isRadioactive: false,
+        image: "images/b.webp"
     },
     C: {
         atomicNumber: 6,
@@ -75,7 +80,8 @@ const elementsData = {
         meltingPoint: "3550 °C",
         boilingPoint: "4827 °C",
         standardState: "Solid",
-        image: "images/c.jpg"
+        isRadioactive: false,
+        image: "images/c.webp"
     },
     N: {
         atomicNumber: 7,
@@ -88,7 +94,8 @@ const elementsData = {
         meltingPoint: "-210.1 °C",
         boilingPoint: "-195.8 °C",
         standardState: "Gas",
-        image: "images/n.jpg"
+        isRadioactive: false,
+        image: "images/n.webp"
     },
     O: {
         atomicNumber: 8,
@@ -101,7 +108,8 @@ const elementsData = {
         meltingPoint: "-218.79 °C",
         boilingPoint: "-182.96 °C",
         standardState: "Gas",
-        image: "images/o.jpg"
+        isRadioactive: false,
+        image: "images/o.webp"
     },
     F: {
         atomicNumber: 9,
@@ -114,7 +122,8 @@ const elementsData = {
         meltingPoint: "-219.62 °C",
         boilingPoint: "-188.12 °C",
         standardState: "Gas",
-        image: "images/f.jpg"
+        isRadioactive: false,
+        image: "images/f.webp"
     },
     Ne: {
         atomicNumber: 10,
@@ -127,7 +136,8 @@ const elementsData = {
         meltingPoint: "-248.59 °C",
         boilingPoint: "-246.08 °C",
         standardState: "Gas",
-        image: "images/ne.jpg"
+        isRadioactive: false,
+        image: "images/ne.webp"
     },
     Na: {
         atomicNumber: 11,
@@ -140,7 +150,8 @@ const elementsData = {
         meltingPoint: "97.72 °C",
         boilingPoint: "883 °C",
         standardState: "Solid",
-        image: "images/na.jpg"
+        isRadioactive: false,
+        image: "images/na.webp"
     },
     Mg: {
         atomicNumber: 12,
@@ -153,7 +164,8 @@ const elementsData = {
         meltingPoint: "650 °C",
         boilingPoint: "1090 °C",
         standardState: "Solid",
-        image: "images/mg.jpg"
+        isRadioactive: false,
+        image: "images/mg.webp"
     },
     Al: {
         atomicNumber: 13,
@@ -166,7 +178,8 @@ const elementsData = {
         meltingPoint: "660.32 °C",
         boilingPoint: "2519 °C",
         standardState: "Solid",
-        image: "images/al.jpg"
+        isRadioactive: false,
+        image: "images/al.webp"
     },
     Si: {
         atomicNumber: 14,
@@ -179,7 +192,8 @@ const elementsData = {
         meltingPoint: "1414 °C",
         boilingPoint: "3265 °C",
         standardState: "Solid",
-        image: "images/si.jpg"
+        isRadioactive: false,
+        image: "images/si.webp"
     },
     P: {
         atomicNumber: 15,
@@ -192,7 +206,8 @@ const elementsData = {
         meltingPoint: "44.1 °C",
         boilingPoint: "280.5 °C",
         standardState: "Solid",
-        image: "images/p.jpg"
+        isRadioactive: false,
+        image: "images/p.webp"
     },
     S: {
         atomicNumber: 16,
@@ -205,7 +220,8 @@ const elementsData = {
         meltingPoint: "115.21 °C",
         boilingPoint: "444.72 °C",
         standardState: "Solid",
-        image: "images/s.jpg"
+        isRadioactive: false,
+        image: "images/s.webp"
     },
     Cl: {
         atomicNumber: 17,
@@ -218,7 +234,8 @@ const elementsData = {
         meltingPoint: "-101.5 °C",
         boilingPoint: "-34.04 °C",
         standardState: "Gas",
-        image: "images/cl.jpg"
+        isRadioactive: false,
+        image: "images/cl.webp"
     },
     Ar: {
         atomicNumber: 18,
@@ -231,7 +248,8 @@ const elementsData = {
         meltingPoint: "-189.3 °C",
         boilingPoint: "-185.8 °C",
         standardState: "Gas",
-        image: "images/ar.jpg"
+        isRadioactive: false,
+        image: "images/ar.webp"
     },
     K: {
         atomicNumber: 19,
@@ -244,7 +262,8 @@ const elementsData = {
         meltingPoint: "63.5 °C",
         boilingPoint: "759 °C",
         standardState: "Solid",
-        image: "images/k.jpg"
+        isRadioactive: false,
+        image: "images/k.webp"
     },
     Ca: {
         atomicNumber: 20,
@@ -257,7 +276,8 @@ const elementsData = {
         meltingPoint: "842 °C",
         boilingPoint: "1484 °C",
         standardState: "Solid",
-        image: "images/ca.jpg"
+        isRadioactive: false,
+        image: "images/ca.webp"
     },
     Sc: {
         atomicNumber: 21,
@@ -270,7 +290,8 @@ const elementsData = {
         meltingPoint: "1541 °C",
         boilingPoint: "2836 °C",
         standardState: "Solid",
-        image: "images/sc.jpg"
+        isRadioactive: false,
+        image: "images/sc.webp"
     },
     Ti: {
         atomicNumber: 22,
@@ -283,7 +304,8 @@ const elementsData = {
         meltingPoint: "1668 °C",
         boilingPoint: "3287 °C",
         standardState: "Solid",
-        image: "images/ti.jpg"
+        isRadioactive: false,
+        image: "images/ti.webp"
     },
     V: {
         atomicNumber: 23,
@@ -296,7 +318,8 @@ const elementsData = {
         meltingPoint: "1910 °C",
         boilingPoint: "3407 °C",
         standardState: "Solid",
-        image: "images/v.jpg"
+        isRadioactive: false,
+        image: "images/v.webp"
     },
     Cr: {
         atomicNumber: 24,
@@ -309,7 +332,8 @@ const elementsData = {
         meltingPoint: "1907 °C",
         boilingPoint: "2671 °C",
         standardState: "Solid",
-        image: "images/cr.jpg"
+        isRadioactive: false,
+        image: "images/cr.webp"
     },
     Mn: {
         atomicNumber: 25,
@@ -322,7 +346,8 @@ const elementsData = {
         meltingPoint: "1246 °C",
         boilingPoint: "2061 °C",
         standardState: "Solid",
-        image: "images/mn.jpg"
+        isRadioactive: false,
+        image: "images/mn.webp"
     },
     Fe: {
         atomicNumber: 26,
@@ -335,7 +360,8 @@ const elementsData = {
         meltingPoint: "1538 °C",
         boilingPoint: "2862 °C",
         standardState: "Solid",
-        image: "images/fe.jpg"
+        isRadioactive: false,
+        image: "images/fe.webp"
     },
     Co: {
         atomicNumber: 27,
@@ -348,7 +374,8 @@ const elementsData = {
         meltingPoint: "1495 °C",
         boilingPoint: "2927 °C",
         standardState: "Solid",
-        image: "images/co.jpg"
+        isRadioactive: false,
+        image: "images/co.webp"
     },
     Ni: {
         atomicNumber: 28,
@@ -361,7 +388,8 @@ const elementsData = {
         meltingPoint: "1455 °C",
         boilingPoint: "2913 °C",
         standardState: "Solid",
-        image: "images/ni.jpg"
+        isRadioactive: false,
+        image: "images/ni.webp"
     },
     Cu: {
         atomicNumber: 29,
@@ -374,7 +402,8 @@ const elementsData = {
         meltingPoint: "1085 °C",
         boilingPoint: "2562 °C",
         standardState: "Solid",
-        image: "images/cu.jpg"
+        isRadioactive: false,
+        image: "images/cu.webp"
     },
     Zn: {
         atomicNumber: 30,
@@ -387,7 +416,8 @@ const elementsData = {
         meltingPoint: "419.5 °C",
         boilingPoint: "907 °C",
         standardState: "Solid",
-        image: "images/zn.jpg"
+        isRadioactive: false,
+        image: "images/zn.webp"
     },
     Ga: {
         atomicNumber: 31,
@@ -400,7 +430,8 @@ const elementsData = {
         meltingPoint: "29.76 °C",
         boilingPoint: "2204 °C",
         standardState: "Solid",
-        image: "images/ga.jpg"
+        isRadioactive: false,
+        image: "images/ga.webp"
     },
     Ge: {
         atomicNumber: 32,
@@ -413,7 +444,8 @@ const elementsData = {
         meltingPoint: "938.25 °C",
         boilingPoint: "2833 °C",
         standardState: "Solid",
-        image: "images/ge.jpg"
+        isRadioactive: false,
+        image: "images/ge.webp"
     },
     As: {
         atomicNumber: 33,
@@ -426,7 +458,8 @@ const elementsData = {
         meltingPoint: "817 °C (sublimes)",
         boilingPoint: "613 °C (sublimes)",
         standardState: "Solid",
-        image: "images/as.jpg"
+        isRadioactive: false,
+        image: "images/as.webp"
     },
     Se: {
         atomicNumber: 34,
@@ -439,7 +472,8 @@ const elementsData = {
         meltingPoint: "221 °C",
         boilingPoint: "685 °C",
         standardState: "Solid",
-        image: "images/se.jpg"
+        isRadioactive: false,
+        image: "images/se.webp"
     },
     Br: {
         atomicNumber: 35,
@@ -452,7 +486,8 @@ const elementsData = {
         meltingPoint: "-7.2 °C",
         boilingPoint: "58.8 °C",
         standardState: "Liquid",
-        image: "images/br.jpg"
+        isRadioactive: false,
+        image: "images/br.webp"
     },
     Kr: {
         atomicNumber: 36,
@@ -465,7 +500,8 @@ const elementsData = {
         meltingPoint: "-157.36 °C",
         boilingPoint: "-153.22 °C",
         standardState: "Gas",
-        image: "images/kr.jpg"
+        isRadioactive: false,
+        image: "images/kr.webp"
     },
     Rb: {
         atomicNumber: 37,
@@ -478,7 +514,8 @@ const elementsData = {
         meltingPoint: "39.31 °C",
         boilingPoint: "688 °C",
         standardState: "Solid",
-        image: "images/rb.jpg"
+        isRadioactive: false,
+        image: "images/rb.webp"
     },
     Sr: {
         atomicNumber: 38,
@@ -491,7 +528,8 @@ const elementsData = {
         meltingPoint: "777 °C",
         boilingPoint: "1382 °C",
         standardState: "Solid",
-        image: "images/sr.jpg"
+        isRadioactive: false,
+        image: "images/sr.webp"
     },
     Y: {
         atomicNumber: 39,
@@ -504,7 +542,8 @@ const elementsData = {
         meltingPoint: "1526 °C",
         boilingPoint: "3336 °C",
         standardState: "Solid",
-        image: "images/y.jpg"
+        isRadioactive: false,
+        image: "images/y.webp"
     },
     Zr: {
         atomicNumber: 40,
@@ -517,7 +556,8 @@ const elementsData = {
         meltingPoint: "1855 °C",
         boilingPoint: "4409 °C",
         standardState: "Solid",
-        image: "images/zr.jpg"
+        isRadioactive: false,
+        image: "images/zr.webp"
     },
     Nb: {
         atomicNumber: 41,
@@ -530,7 +570,8 @@ const elementsData = {
         meltingPoint: "2477 °C",
         boilingPoint: "4744 °C",
         standardState: "Solid",
-        image: "images/nb.jpg"
+        isRadioactive: false,
+        image: "images/nb.webp"
     },
     Mo: {
         atomicNumber: 42,
@@ -543,7 +584,8 @@ const elementsData = {
         meltingPoint: "2623 °C",
         boilingPoint: "4639 °C",
         standardState: "Solid",
-        image: "images/mo.jpg"
+        isRadioactive: false,
+        image: "images/mo.webp"
     },
     Tc: {
         atomicNumber: 43,
@@ -556,7 +598,8 @@ const elementsData = {
         meltingPoint: "2157 °C",
         boilingPoint: "4265 °C",
         standardState: "Solid",
-        image: "images/tc.jpg"
+        isRadioactive: true,
+        image: "images/tc.webp"
     },
     Ru: {
         atomicNumber: 44,
@@ -569,7 +612,7 @@ const elementsData = {
         meltingPoint: "2334 °C",
         boilingPoint: "4150 °C",
         standardState: "Solid",
-        image: "images/ru.jpg"
+        image: "images/ru.webp"
     },
     Rh: {
         atomicNumber: 45,
@@ -582,7 +625,8 @@ const elementsData = {
         meltingPoint: "1964 °C",
         boilingPoint: "3695 °C",
         standardState: "Solid",
-        image: "images/rh.jpg"
+        isRadioactive: false,
+        image: "images/rh.webp"
     },
     Pd: {
         atomicNumber: 46,
@@ -595,7 +639,8 @@ const elementsData = {
         meltingPoint: "1554.9 °C",
         boilingPoint: "2963 °C",
         standardState: "Solid",
-        image: "images/pd.jpg"
+        isRadioactive: false,
+        image: "images/pd.webp"
     },
     Ag: {
         atomicNumber: 47,
@@ -608,7 +653,8 @@ const elementsData = {
         meltingPoint: "961.8 °C",
         boilingPoint: "2162 °C",
         standardState: "Solid",
-        image: "images/ag.jpg"
+        isRadioactive: false,
+        image: "images/ag.webp"
     },
     Cd: {
         atomicNumber: 48,
@@ -621,7 +667,8 @@ const elementsData = {
         meltingPoint: "321.07 °C",
         boilingPoint: "767 °C",
         standardState: "Solid",
-        image: "images/cd.jpg"
+        isRadioactive: false,
+        image: "images/cd.webp"
     },
     In: {
         atomicNumber: 49,
@@ -634,7 +681,8 @@ const elementsData = {
         meltingPoint: "156.6 °C",
         boilingPoint: "2072 °C",
         standardState: "Solid",
-        image: "images/in.jpg"
+        isRadioactive: false,
+        image: "images/in.webp"
     },
     Sn: {
         atomicNumber: 50,
@@ -647,7 +695,8 @@ const elementsData = {
         meltingPoint: "231.93 °C",
         boilingPoint: "2602 °C",
         standardState: "Solid",
-        image: "images/sn.jpg"
+        isRadioactive: false,
+        image: "images/sn.webp"
     },
     Sb: {
         atomicNumber: 51,
@@ -660,7 +709,8 @@ const elementsData = {
         meltingPoint: "630.63 °C",
         boilingPoint: "1587 °C",
         standardState: "Solid",
-        image: "images/sb.jpg"
+        isRadioactive: false,
+        image: "images/sb.webp"
     },
     Te: {
         atomicNumber: 52,
@@ -673,7 +723,8 @@ const elementsData = {
         meltingPoint: "449.51 °C",
         boilingPoint: "988 °C",
         standardState: "Solid",
-        image: "images/te.jpg"
+        isRadioactive: false,
+        image: "images/te.webp"
     },
     I: {
         atomicNumber: 53,
@@ -686,7 +737,8 @@ const elementsData = {
         meltingPoint: "113.7 °C",
         boilingPoint: "184.3 °C",
         standardState: "Solid",
-        image: "images/i.jpg"
+        isRadioactive: false,
+        image: "images/i.webp"
     },
     Xe: {
         atomicNumber: 54,
@@ -699,7 +751,7 @@ const elementsData = {
         meltingPoint: "-111.8 °C",
         boilingPoint: "-108.1 °C",
         standardState: "Gas",
-        image: "images/xe.jpg"
+        image: "images/xe.webp"
     },
     Cs: {
         atomicNumber: 55,
@@ -712,7 +764,8 @@ const elementsData = {
         meltingPoint: "28.44 °C",
         boilingPoint: "671 °C",
         standardState: "Solid",
-        image: "images/cs.jpg"
+        isRadioactive: false,
+        image: "images/cs.webp"
     },
     Ba: {
         atomicNumber: 56,
@@ -725,7 +778,8 @@ const elementsData = {
         meltingPoint: "727 °C",
         boilingPoint: "1870 °C",
         standardState: "Solid",
-        image: "images/ba.jpg"
+        isRadioactive: false,
+        image: "images/ba.webp"
     },
     La: {
         atomicNumber: 57,
@@ -738,7 +792,8 @@ const elementsData = {
         meltingPoint: "920 °C",
         boilingPoint: "3464 °C",
         standardState: "Solid",
-        image: "images/la.jpg"
+        isRadioactive: false,
+        image: "images/la.webp"
     },
     Ce: {
         atomicNumber: 58,
@@ -751,7 +806,8 @@ const elementsData = {
         meltingPoint: "798 °C",
         boilingPoint: "3424 °C",
         standardState: "Solid",
-        image: "images/ce.jpg"
+        isRadioactive: false,
+        image: "images/ce.webp"
     },
     Pr: {
         atomicNumber: 59,
@@ -764,7 +820,8 @@ const elementsData = {
         meltingPoint: "931 °C",
         boilingPoint: "3290 °C",
         standardState: "Solid",
-        image: "images/pr.jpg"
+        isRadioactive: false,
+        image: "images/pr.webp"
     },
     Nd: {
         atomicNumber: 60,
@@ -777,7 +834,8 @@ const elementsData = {
         meltingPoint: "1024 °C",
         boilingPoint: "3074 °C",
         standardState: "Solid",
-        image: "images/nd.jpg"
+        isRadioactive: false,
+        image: "images/nd.webp"
     },
     Pm: {
         atomicNumber: 61,
@@ -790,7 +848,8 @@ const elementsData = {
         meltingPoint: "1042 °C",
         boilingPoint: "3000 °C",
         standardState: "Solid",
-        image: "images/pm.jpg"
+        isRadioactive: false,
+        image: "images/pm.webp"
     },
     Sm: {
         atomicNumber: 62,
@@ -803,7 +862,8 @@ const elementsData = {
         meltingPoint: "1072 °C",
         boilingPoint: "1794 °C",
         standardState: "Solid",
-        image: "images/sm.jpg"
+        isRadioactive: false,
+        image: "images/sm.webp"
     },
     Eu: {
         atomicNumber: 63,
@@ -816,7 +876,8 @@ const elementsData = {
         meltingPoint: "822 °C",
         boilingPoint: "1529 °C",
         standardState: "Solid",
-        image: "images/eu.jpg"
+        isRadioactive: false,
+        image: "images/eu.webp"
     },
     Gd: {
         atomicNumber: 64,
@@ -829,7 +890,8 @@ const elementsData = {
         meltingPoint: "1313 °C",
         boilingPoint: "3273 °C",
         standardState: "Solid",
-        image: "images/gd.jpg"
+        isRadioactive: false,
+        image: "images/gd.webp"
     },
     Tb: {
         atomicNumber: 65,
@@ -842,7 +904,8 @@ const elementsData = {
         meltingPoint: "1356 °C",
         boilingPoint: "3230 °C",
         standardState: "Solid",
-        image: "images/tb.jpg"
+        isRadioactive: false,
+        image: "images/tb.webp"
     },
     Dy: {
         atomicNumber: 66,
@@ -855,7 +918,8 @@ const elementsData = {
         meltingPoint: "1412 °C",
         boilingPoint: "2567 °C",
         standardState: "Solid",
-        image: "images/dy.jpg"
+        isRadioactive: false,
+        image: "images/dy.webp"
     },
     Ho: {
         atomicNumber: 67,
@@ -868,7 +932,8 @@ const elementsData = {
         meltingPoint: "1474 °C",
         boilingPoint: "2700 °C",
         standardState: "Solid",
-        image: "images/ho.jpg"
+        isRadioactive: false,
+        image: "images/ho.webp"
     },
     Er: {
         atomicNumber: 68,
@@ -881,7 +946,8 @@ const elementsData = {
         meltingPoint: "1529 °C",
         boilingPoint: "2868 °C",
         standardState: "Solid",
-        image: "images/er.jpg"
+        isRadioactive: false,
+        image: "images/er.webp"
     },
     Tm: {
         atomicNumber: 69,
@@ -894,7 +960,8 @@ const elementsData = {
         meltingPoint: "1545 °C",
         boilingPoint: "1950 °C",
         standardState: "Solid",
-        image: "images/tm.jpg"
+        isRadioactive: false,
+        image: "images/tm.webp"
     },
     Yb: {
         atomicNumber: 70,
@@ -907,7 +974,8 @@ const elementsData = {
         meltingPoint: "824 °C",
         boilingPoint: "1196 °C",
         standardState: "Solid",
-        image: "images/yb.jpg"
+        isRadioactive: false,
+        image: "images/yb.webp"
     },
     Lu: {
         atomicNumber: 71,
@@ -920,7 +988,8 @@ const elementsData = {
         meltingPoint: "1652 °C",
         boilingPoint: "3402 °C",
         standardState: "Solid",
-        image: "images/lu.jpg"
+        isRadioactive: false,
+        image: "images/lu.webp"
     },
     Hf: {
         atomicNumber: 72,
@@ -933,7 +1002,8 @@ const elementsData = {
         meltingPoint: "2233 °C",
         boilingPoint: "4603 °C",
         standardState: "Solid",
-        image: "images/hf.jpg"
+        isRadioactive: false,
+        image: "images/hf.webp"
     },
     Ta: {
         atomicNumber: 73,
@@ -946,7 +1016,8 @@ const elementsData = {
         meltingPoint: "3017 °C",
         boilingPoint: "5458 °C",
         standardState: "Solid",
-        image: "images/ta.jpg"
+        isRadioactive: false,
+        image: "images/ta.webp"
     },
     W: {
         atomicNumber: 74,
@@ -959,7 +1030,8 @@ const elementsData = {
         meltingPoint: "3422 °C",
         boilingPoint: "5555 °C",
         standardState: "Solid",
-        image: "images/w.jpg"
+        isRadioactive: false,
+        image: "images/w.webp"
     },
     Re: {
         atomicNumber: 75,
@@ -972,7 +1044,8 @@ const elementsData = {
         meltingPoint: "3186 °C",
         boilingPoint: "5596 °C",
         standardState: "Solid",
-        image: "images/re.jpg"
+        isRadioactive: false,
+        image: "images/re.webp"
     },
     Os: {
         atomicNumber: 76,
@@ -985,7 +1058,8 @@ const elementsData = {
         meltingPoint: "3033 °C",
         boilingPoint: "5012 °C",
         standardState: "Solid",
-        image: "images/os.jpg"
+        isRadioactive: false,
+        image: "images/os.webp"
     },
     Ir: {
         atomicNumber: 77,
@@ -998,7 +1072,8 @@ const elementsData = {
         meltingPoint: "2466 °C",
         boilingPoint: "4428 °C",
         standardState: "Solid",
-        image: "images/ir.jpg"
+        isRadioactive: false,
+        image: "images/ir.webp"
     },
     Pt: {
         atomicNumber: 78,
@@ -1011,7 +1086,8 @@ const elementsData = {
         meltingPoint: "1768.3 °C",
         boilingPoint: "3825 °C",
         standardState: "Solid",
-        image: "images/pt.jpg"
+        isRadioactive: false,
+        image: "images/pt.webp"
     },
     Au: {
         atomicNumber: 79,
@@ -1024,7 +1100,8 @@ const elementsData = {
         meltingPoint: "1064.18 °C",
         boilingPoint: "2970 °C",
         standardState: "Solid",
-        image: "images/au.jpg"
+        isRadioactive: false,
+        image: "images/au.webp"
     },
     Hg: {
         atomicNumber: 80,
@@ -1037,7 +1114,8 @@ const elementsData = {
         meltingPoint: "-38.83 °C",
         boilingPoint: "356.73 °C",
         standardState: "Liquid",
-        image: "images/hg.jpg"
+        isRadioactive: false,
+        image: "images/hg.webp"
     },
     Tl: {
         atomicNumber: 81,
@@ -1050,7 +1128,8 @@ const elementsData = {
         meltingPoint: "304 °C",
         boilingPoint: "1473 °C",
         standardState: "Solid",
-        image: "images/tl.jpg"
+        isRadioactive: false,
+        image: "images/tl.webp"
     },
     Pb: {
         atomicNumber: 82,
@@ -1063,7 +1142,8 @@ const elementsData = {
         meltingPoint: "327.46 °C",
         boilingPoint: "1749 °C",
         standardState: "Solid",
-        image: "images/pb.jpg"
+        isRadioactive: false,
+        image: "images/pb.webp"
     },
     Bi: {
         atomicNumber: 83,
@@ -1076,7 +1156,8 @@ const elementsData = {
         meltingPoint: "271.3 °C",
         boilingPoint: "1564 °C",
         standardState: "Solid",
-        image: "images/bi.jpg"
+        isRadioactive: false,
+        image: "images/bi.webp"
     },
     Po: {
         atomicNumber: 84,
@@ -1089,7 +1170,8 @@ const elementsData = {
         meltingPoint: "254 °C",
         boilingPoint: "962 °C",
         standardState: "Solid",
-        image: "images/po.jpg"
+        isRadioactive: true,
+        image: "images/po.webp"
     },
     At: {
         atomicNumber: 85,
@@ -1102,7 +1184,8 @@ const elementsData = {
         meltingPoint: "302 °C",
         boilingPoint: "337 °C",
         standardState: "Solid",
-        image: "images/at.jpg"
+        isRadioactive: true,
+        image: "images/at.webp"
     },
     Rn: {
         atomicNumber: 86,
@@ -1115,7 +1198,8 @@ const elementsData = {
         meltingPoint: "-71 °C",
         boilingPoint: "-61.7 °C",
         standardState: "Gas",
-        image: "images/rn.jpg"
+        isRadioactive: true,
+        image: "images/rn.webp"
     },
     Fr: {
         atomicNumber: 87,
@@ -1128,7 +1212,8 @@ const elementsData = {
         meltingPoint: "27 °C",
         boilingPoint: "677 °C",
         standardState: "Solid",
-        image: "images/fr.jpg"
+        isRadioactive: true,
+        image: "images/fr.webp"
     },
     Ra: {
         atomicNumber: 88,
@@ -1141,7 +1226,8 @@ const elementsData = {
         meltingPoint: "700 °C",
         boilingPoint: "1737 °C",
         standardState: "Solid",
-        image: "images/ra.jpg"
+        isRadioactive: true,
+        image: "images/ra.webp"
     },
     Ac: {
         atomicNumber: 89,
@@ -1154,7 +1240,8 @@ const elementsData = {
         meltingPoint: "1050 °C",
         boilingPoint: "3198 °C",
         standardState: "Solid",
-        image: "images/ac.jpg"
+        isRadioactive: true,
+        image: "images/ac.webp"
     },
     Th: {
         atomicNumber: 90,
@@ -1167,7 +1254,8 @@ const elementsData = {
         meltingPoint: "1750 °C",
         boilingPoint: "4788 °C",
         standardState: "Solid",
-        image: "images/th.jpg"
+        isRadioactive: true,
+        image: "images/th.webp"
     },
     Pa: {
         atomicNumber: 91,
@@ -1180,7 +1268,8 @@ const elementsData = {
         meltingPoint: "1568 °C",
         boilingPoint: "4027 °C",
         standardState: "Solid",
-        image: "images/pa.jpg"
+        isRadioactive: true,
+        image: "images/pa.webp"
     },
     U: {
         atomicNumber: 92,
@@ -1193,7 +1282,8 @@ const elementsData = {
         meltingPoint: "1135 °C",
         boilingPoint: "4131 °C",
         standardState: "Solid",
-        image: "images/u.jpg"
+        isRadioactive: true,
+        image: "images/u.webp"
     },
     Np: {
         atomicNumber: 93,
@@ -1206,7 +1296,8 @@ const elementsData = {
         meltingPoint: "644 °C",
         boilingPoint: "3902 °C",
         standardState: "Solid",
-        image: "images/np.jpg"
+        isRadioactive: true,
+        image: "images/np.webp"
     },
     Pu: {
         atomicNumber: 94,
@@ -1219,7 +1310,8 @@ const elementsData = {
         meltingPoint: "639.4 °C",
         boilingPoint: "3228 °C",
         standardState: "Solid",
-        image: "images/pu.jpg"
+        isRadioactive: true,
+        image: "images/pu.webp"
     },
     Am: {
         atomicNumber: 95,
@@ -1232,7 +1324,8 @@ const elementsData = {
         meltingPoint: "1176 °C",
         boilingPoint: "2011 °C",
         standardState: "Solid",
-        image: "images/am.jpg"
+        isRadioactive: true,
+        image: "images/am.png"
     },
     Cm: {
         atomicNumber: 96,
@@ -1245,7 +1338,8 @@ const elementsData = {
         meltingPoint: "1340 °C",
         boilingPoint: "3110 °C",
         standardState: "Solid",
-        image: "images/cm.jpg"
+        isRadioactive: true,
+        image: "images/cm.png"
     },
     Bk: {
         atomicNumber: 97,
@@ -1258,7 +1352,8 @@ const elementsData = {
         meltingPoint: "986 °C",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/bk.jpg"
+        isRadioactive: true,
+        image: "images/bk.png"
     },
     Cf: {
         atomicNumber: 98,
@@ -1271,7 +1366,8 @@ const elementsData = {
         meltingPoint: "900 °C",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/cf.jpg"
+        isRadioactive: true,
+        image: "images/cf.png"
     },
     Es: {
         atomicNumber: 99,
@@ -1284,7 +1380,8 @@ const elementsData = {
         meltingPoint: "860 °C",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/es.jpg"
+        isRadioactive: true,
+        image: "images/es.png"
     },
     Fm: {
         atomicNumber: 100,
@@ -1297,7 +1394,8 @@ const elementsData = {
         meltingPoint: "1527 °C (estimated)",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/fm.jpg"
+        isRadioactive: true,
+        image: "images/fm.png"
     },
     Md: {
         atomicNumber: 101,
@@ -1310,7 +1408,8 @@ const elementsData = {
         meltingPoint: "827 °C (estimated)",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/md.jpg"
+        isRadioactive: true,
+        image: "images/md.png"
     },
     No: {
         atomicNumber: 102,
@@ -1323,7 +1422,8 @@ const elementsData = {
         meltingPoint: "827 °C (estimated)",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/no.jpg"
+        isRadioactive: true,
+        image: "images/no.png"
     },
     Lr: {
         atomicNumber: 103,
@@ -1336,7 +1436,7 @@ const elementsData = {
         meltingPoint: "1627 °C (estimated)",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/lr.jpg"
+        image: "images/lr.png"
     },
     Rf: {
         atomicNumber: 104,
@@ -1349,7 +1449,8 @@ const elementsData = {
         meltingPoint: "2400 °C (estimated)",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/rf.jpg"
+        isRadioactive: true,
+        image: "images/rf.png"
     },
     Db: {
         atomicNumber: 105,
@@ -1362,7 +1463,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/db.jpg"
+        isRadioactive: true,
+        image: "images/db.png"
     },
     Sg: {
         atomicNumber: 106,
@@ -1375,7 +1477,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/sg.jpg"
+        isRadioactive: true,
+        image: "images/sg.png"
     },
     Bh: {
         atomicNumber: 107,
@@ -1388,7 +1491,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/bh.jpg"
+        isRadioactive: true,
+        image: "images/bh.png"
     },
     Hs: {
         atomicNumber: 108,
@@ -1401,7 +1505,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/hs.jpg"
+        isRadioactive: true,
+        image: "images/hs.png"
     },
     Mt: {
         atomicNumber: 109,
@@ -1414,7 +1519,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/mt.jpg"
+        isRadioactive: true,
+        image: "images/mt.png"
     },
     Ds: {
         atomicNumber: 110,
@@ -1427,7 +1533,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/ds.jpg"
+        isRadioactive: true,
+        image: "images/ds.png"
     },
     Rg: {
         atomicNumber: 111,
@@ -1440,7 +1547,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/rg.jpg"
+        isRadioactive: true,
+        image: "images/rg.png"
     },
     Cn: {
         atomicNumber: 112,
@@ -1453,7 +1561,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Gas",
-        image: "images/cn.jpg"
+        isRadioactive: true,
+        image: "images/cn.png"
     },
     Nh: {
         atomicNumber: 113,
@@ -1466,7 +1575,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/nh.jpg"
+        isRadioactive: true,
+        image: "images/nh.png"
     },
     Fl: {
         atomicNumber: 114,
@@ -1479,7 +1589,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/fl.jpg"
+        isRadioactive: true,
+        image: "images/fl.png"
     },
     Mc: {
         atomicNumber: 115,
@@ -1492,7 +1603,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/mc.jpg"
+        isRadioactive: true,
+        image: "images/mc.png"
     },
     Lv: {
         atomicNumber: 116,
@@ -1505,7 +1617,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/lv.jpg"
+        isRadioactive: true,
+        image: "images/lv.png"
     },
     Ts: {
         atomicNumber: 117,
@@ -1518,7 +1631,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Solid",
-        image: "images/ts.jpg"
+        isRadioactive: true,
+        image: "images/ts.png"
     },
     Og: {
         atomicNumber: 118,
@@ -1531,7 +1645,8 @@ const elementsData = {
         meltingPoint: "N/A",
         boilingPoint: "N/A",
         standardState: "Gas",
-        image: "images/og.jpg"
+        isRadioactive: true,
+        image: "images/og.png"
     }
 
 };
@@ -1539,44 +1654,75 @@ const elementsData = {
 
 // script.js
 
-// A helper object to map "display category names" to their CSS classes:
-const categoryToClass = {
+/******************************************
+  Mapping of existing "display category" => CSS classes
+ ******************************************/
+  const categoryToClass = {
     "Alkali Metal": "alkali-metal",
     "Alkaline Earth Metal": "alkaline-earth-metal",
     "Transition Metal": "transition-metal",
-    "Lanthanide": "lanthanoid",    // 'Lanthanide' => .lanthanoid
-    "Lanthanides": "lanthanoid",   // Some people may type "Lanthanides", so we alias it
+    "Lanthanide": "lanthanoid",
+    "Lanthanides": "lanthanoid", // Just in case user types plural
     "Actinide": "actinoid",
     "Actinides": "actinoid",
     "Metalloid": "metalloid",
     "Halogen": "halogen",
     "Noble Gas": "noble-gas",
-    "Post-transition Metal": "other-metal", // or "post-transition-metal" if you prefer
+    "Post-transition Metal": "other-metal",
     "Nonmetal": "nonmetal",
-    // You can add more synonyms if needed, e.g. "Other Metal" => "other-metal"
+  };
+
+  /******************************************
+  New "search filters" for states, radioactivity, etc.
+  We highlight all elements matching a particular
+  function-based filter.
+ ******************************************/
+const specialFilters = {
+    // user types "solid"
+    "solid": (data) => data.standardState?.toLowerCase() === "solid",
+  
+    // user types "liquid"
+    "liquid": (data) => data.standardState?.toLowerCase() === "liquid",
+  
+    // user types "gas"
+    "gas": (data) => data.standardState?.toLowerCase() === "gas",
+  
+    // user types "radioactive"
+    // We'll rely on isRadioactive: true in elementsData
+    "radioactive": (data) => data.isRadioactive === true,
+  
+    // user types "metal"
+    // We'll consider anything whose `category` includes "Metal" 
+    // (this will include Alkali Metal, Alkaline Earth Metal, 
+    //  Transition Metal, Post-transition Metal, etc.)
+    "metal": (data) => data.category?.toLowerCase().includes("metal"),
   };
   
-  // A function to remove highlights from all elements in case a user searches again quickly
+  
+/******************************************
+  Remove all .highlight from the document
+ ******************************************/
   function removeAllHighlights() {
     document.querySelectorAll('.highlight').forEach(el => {
       el.classList.remove('highlight');
     });
   }
+
+
   
-  // The main search handling function:
-  function handleSearch(query) {
-    // 1) Trim and standardize the input
+  /******************************************
+  The main search function
+ ******************************************/
+function handleSearch(query) {
     const searchQuery = query.trim().toLowerCase();
     if (!searchQuery) return;
   
-    // 2) Check for numeric (atomic number)
+    // 1) Check if numeric => atomic number
     if (!isNaN(searchQuery)) {
       const atomicNum = parseInt(searchQuery);
-      // Find the element whose atomicNumber == atomicNum
-      for (const [symbolKey, data] of Object.entries(elementsData)) {
+      for (const [symbol, data] of Object.entries(elementsData)) {
         if (data.atomicNumber === atomicNum) {
-          // Found a match => open the modal
-          openElementModal(symbolKey);
+          openElementModal(symbol);
           return;
         }
       }
@@ -1584,9 +1730,8 @@ const categoryToClass = {
       return;
     }
   
-    // 3) Check if user typed a category name (e.g., "Alkali Metal", "Noble Gas", etc.)
-    //    We'll compare the capitalized form of user input with keys in categoryToClass
-    //    But to be flexible, let's just see if any categoryToClass key matches ignoring case:
+    // 2) Check if user typed a known "categoryToClass" (e.g. "Alkali Metal")
+    //    We'll do a case-insensitive match
     for (const catName of Object.keys(categoryToClass)) {
       if (catName.toLowerCase() === searchQuery) {
         highlightCategory(categoryToClass[catName]);
@@ -1594,103 +1739,172 @@ const categoryToClass = {
       }
     }
   
-    // 4) Check exact match for element name or symbol
-    //    We'll do two passes: one for name, one for symbol
-    //    (You can combine them into one pass if you like.)
-    
-    // 4a) Check by exact name
-    for (const [symbolKey, data] of Object.entries(elementsData)) {
+    // 3) Check if user typed a special filter key (solid, liquid, gas, metal, radioactive, etc.)
+    //    We'll do a case-insensitive match
+    for (const filterKey of Object.keys(specialFilters)) {
+      if (filterKey.toLowerCase() === searchQuery) {
+        highlightByFilter(specialFilters[filterKey]);
+        return;
+      }
+    }
+  
+    // 4) Check exact match for element name
+    for (const [symbol, data] of Object.entries(elementsData)) {
       if (data.name.toLowerCase() === searchQuery) {
-        openElementModal(symbolKey);
+        openElementModal(symbol);
         return;
       }
     }
   
-    // 4b) Check by exact symbol
-    for (const [symbolKey, data] of Object.entries(elementsData)) {
-      if (symbolKey.toLowerCase() === searchQuery) {
-        openElementModal(symbolKey);
+    // 5) Check exact match for element symbol
+    for (const [symbol, data] of Object.entries(elementsData)) {
+      if (symbol.toLowerCase() === searchQuery) {
+        openElementModal(symbol);
         return;
       }
     }
   
-    // 5) If we get here, no match
-    alert(`No element or category found matching: "${query}".\n` +
-          'Try searching by exact element symbol (e.g., "Na"), ' +
-          'name (e.g., "Sodium"), atomic number (e.g., "11"), or group/category (e.g., "Alkali Metal").');
+    // 6) No match
+    alert(
+      `No match found for: "${query}".\n` +
+      `Try atomic number, symbol, full name, ` +
+      `or these categories: ${Object.keys(categoryToClass).join(", ")}, ` +
+      `${Object.keys(specialFilters).join(", ")}.`
+    );
   }
   
-  // Function to open the modal for a given element symbol
-  function openElementModal(symbol) {
+// logic of opening the modal
+function openElementModal(symbol) {
     const elementData = elementsData[symbol];
     if (!elementData) {
-      alert(`No data found for symbol: ${symbol}`);
-      return;
+        alert(`No data found for symbol: ${symbol}`);
+        return;
     }
-  
-    // Populate the modal content
+
+    // Update modal header with name and symbol
     document.getElementById('elementModalLabel').textContent = `${elementData.name} (${elementData.symbol})`;
-    document.querySelector('.modal-image img').src = elementData.image;
-    document.querySelector('.modal-details').innerHTML = `
-      <h5>${elementData.name} (${elementData.symbol})</h5>
-      <ul class="list-unstyled">
-          <li><strong>Atomic Number:</strong> ${elementData.atomicNumber}</li>
-          <li><strong>Atomic Mass:</strong> ${elementData.atomicMass}</li>
-          <li><strong>Category:</strong> ${elementData.category}</li>
-          <li><strong>Electron Configuration:</strong> ${elementData.electronConfiguration}</li>
-          <li><strong>Electronegativity:</strong> ${elementData.electronegativity}</li>
-          <li><strong>Melting Point:</strong> ${elementData.meltingPoint}</li>
-          <li><strong>Boiling Point:</strong> ${elementData.boilingPoint}</li>
-      </ul>
-    `;
-    document.querySelector('.modal-footer a').href = `details/${symbol.toLowerCase()}.html`;
-  
+
+    const elementImage = document.getElementById('elementImage');
+    elementImage.src = elementData.image || '';
+    elementImage.alt = `${elementData.name} Image`;
+
+    // Populate other modal fields as before
+    document.getElementById('elementAtomicNumber').textContent = elementData.atomicNumber || '--';
+    document.getElementById('elementAtomicMass').textContent = elementData.atomicMass || '--';
+    document.getElementById('elementCategory').textContent = elementData.category || '--';
+    document.getElementById('elementElectronConfiguration').textContent = elementData.electronConfiguration || '--';
+    document.getElementById('elementElectronegativity').textContent = elementData.electronegativity || '--';
+    document.getElementById('elementMeltingPoint').textContent = elementData.meltingPoint || '--';
+    document.getElementById('elementBoilingPoint').textContent = elementData.boilingPoint || '--';
+    document.getElementById('elementStandardState').textContent = elementData.standardState || '--';
+    document.getElementById('elementRadioactive').textContent = elementData.isRadioactive ? 'Yes' : 'No';
+    document.getElementById('learnMoreLink').href = `details/${elementData.name.toLowerCase()}.html`;
+
     // Show the modal
     const modal = new bootstrap.Modal(document.getElementById('elementModal'));
     modal.show();
+}
+
+
+  function fadeOutAndRedirect(destinationUrl) {
+    document.body.classList.add('fade-out');
+  
+    // When transition finishes, redirect
+    document.body.addEventListener('transitionend', function onTransitionEnd() {
+      document.body.removeEventListener('transitionend', onTransitionEnd);
+      window.location.href = destinationUrl; 
+    });
+  }
+
+  function fadeOutAndOpenInNewTab(destinationUrl) {
+    document.body.classList.add('fade-out');
+    document.body.addEventListener('transitionend', function onTransitionEnd() {
+      document.body.removeEventListener('transitionend', onTransitionEnd);
+      window.open(destinationUrl, '_blank');
+    });
   }
   
-  // Function to highlight all elements that belong to a particular CSS class (e.g., 'alkali-metal')
-  function highlightCategory(cssClass) {
-    removeAllHighlights(); // Make sure to remove old highlights first
+
+  /******************************************
+  Highlight elements via a function-based filter
+  (used for "radioactive", "solid", "metal", etc.)
+ ******************************************/
+function highlightByFilter(filterFn) {
+    removeAllHighlights();
   
-    // Find all elements that match the class
-    const elementsToHighlight = document.querySelectorAll(`.${cssClass}`);
-    if (elementsToHighlight.length === 0) {
-      alert(`No elements found for category: ${cssClass}`);
+    // Gather all elements on the table
+    const allElementDivs = document.querySelectorAll('.element');
+    let foundAny = false;
+  
+    allElementDivs.forEach(el => {
+      const symbol = el.querySelector('.symbol')?.textContent.trim();
+      if (!symbol) return;
+  
+      // Check if this element's data matches the filter
+      const data = elementsData[symbol];
+      if (data && filterFn(data)) {
+        el.classList.add('highlight');
+        foundAny = true;
+      }
+    });
+  
+    if (!foundAny) {
+      alert("No elements matched your filter.");
       return;
     }
   
-    // Add the highlight class
-    elementsToHighlight.forEach(el => {
-      el.classList.add('highlight');
-    });
-  
-    // Remove the highlight after 3 seconds
+    // Remove after 3 seconds
     setTimeout(() => {
-      elementsToHighlight.forEach(el => {
-        el.classList.remove('highlight');
-      });
+      allElementDivs.forEach(el => el.classList.remove('highlight'));
     }, 3000);
   }
-  
-  // ===========================
-  // Existing Code: Add click event listeners for modals
-  // (unchanged from your snippet, just ensure it's after the above functions)
-  // ===========================
-  document.querySelectorAll('.element').forEach(element => {
-    element.addEventListener('click', function () {
-      const symbol = element.querySelector('.symbol').textContent.trim();
-      openElementModal(symbol);
-    });
-  });
-  
-  // ===========================
-  // New: Listen for form submission
-  // ===========================
-  document.getElementById('searchForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent the default form submission
+
+  /******************************************
+  Attach event to the form submission
+ ******************************************/
+document.getElementById('searchForm').addEventListener('submit', function(e) {
+    e.preventDefault();
     const query = document.getElementById('searchInput').value;
     handleSearch(query);
   });
   
+  /******************************************
+    Add click listeners to each element card
+   ******************************************/
+  document.querySelectorAll('.element').forEach(el => {
+    el.addEventListener('click', () => {
+      const symbol = el.querySelector('.symbol').textContent.trim();
+      openElementModal(symbol);
+    });
+  });
+  
+  // Attach click listeners to category buttons
+document.querySelectorAll('.category-highlight').forEach(button => {
+    button.addEventListener('click', () => {
+        const categoryClass = button.getAttribute('data-category');
+        highlightCategory(categoryClass);
+    });
+});
+
+// Function to highlight elements by category
+function highlightCategory(categoryClass) {
+    // Remove previous highlights
+    removeAllHighlights();
+
+    // Find all elements with the specified category class
+    const elementsToHighlight = document.querySelectorAll(`.${categoryClass}`);
+    if (elementsToHighlight.length === 0) {
+        alert(`No elements found for category: ${categoryClass}`);
+        return;
+    }
+
+    // Add the highlight class
+    elementsToHighlight.forEach(el => el.classList.add('highlight'));
+
+    // Remove the highlight after 3 seconds
+    setTimeout(() => {
+        elementsToHighlight.forEach(el => el.classList.remove('highlight'));
+    }, 3000);
+}
+
+

@@ -297,11 +297,11 @@ body {
 
 /* Add this snippet somewhere in your styles.css */
 .highlight {
-    animation: highlight-animation 1s ease-in-out 0s 3 alternate;
-    /* The above will repeat the highlight effect 3 times over 3 seconds. 
-       Alternatively, you can keep it for exactly 3s with setTimeout to remove the class. */
-    box-shadow: 0 0 10px 5px yellow;
+    transform: scale(1.1); /* Smoothly grow the element */
+    border: 2px solid rgb(0, 0, 0); /* Uniform border for all highlighted elements */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
 }
+
 
 @keyframes highlight-animation {
     0% {

@@ -28,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#periodic-table">Periodic Table</a>
+                            <a class="nav-link" href="/Periodic Table/docs/periodic_table.pdf" target="_blank">Periodic Table</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                     </ul>
                     <!-- Search Bar -->
@@ -348,7 +348,7 @@
             </div>
             <div class="element lanthanoid" style="grid-column: 3;">
                 <div class="atomic-number">57</div>
-                <div class="symbol">Ln</div>
+                <div class="symbol">La</div>
                 <div class="name">Lanthanides</div>
             </div>
             <div class="element transition-metal" style="grid-column: 4;">
@@ -681,6 +681,52 @@
         </div>
     </div>
 
+    <div class="container mt-5">
+        <div class="d-flex flex-wrap justify-content-center mt-3">
+            <button class="btn btn-outline-primary mx-2 my-1 category-highlight" data-category="alkali-metal">
+                <span class="badge rounded-circle" style="background-color: #FFB3B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Alkali Metals
+            </button>
+            <button class="btn btn-outline-secondary mx-2 my-1 category-highlight" data-category="alkaline-earth-metal">
+                <span class="badge rounded-circle" style="background-color: #FFE4B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Alkaline Earth Metals
+            </button>
+            <button class="btn btn-outline-success mx-2 my-1 category-highlight" data-category="transition-metal">
+                <span class="badge rounded-circle" style="background-color: #D4E4FF; width: 20px; height: 20px; display: inline-block;"></span>
+                Transition Metals
+            </button>
+            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="post-transition-metal">
+                <span class="badge rounded-circle" style="background-color: #FFC4C4; width: 20px; height: 20px; display: inline-block;"></span>
+                Post-transition Metals
+            </button>
+            <button class="btn btn-outline-warning mx-2 my-1 category-highlight" data-category="metalloid">
+                <span class="badge rounded-circle" style="background-color: #FFFFB3; width: 20px; height: 20px; display: inline-block;"></span>
+                Metalloids
+            </button>
+            <button class="btn btn-outline-info mx-2 my-1 category-highlight" data-category="reactive-nonmetal">
+                <span class="badge rounded-circle" style="background-color: #FFFFD4; width: 20px; height: 20px; display: inline-block;"></span>
+                Reactive Non-metals
+            </button>
+            <button class="btn btn-outline-dark mx-2 my-1 category-highlight" data-category="noble-gas">
+                <span class="badge rounded-circle" style="background-color: #B3FFFF; width: 20px; height: 20px; display: inline-block;"></span>
+                Noble Gases
+            </button>
+            <button class="btn btn-outline-primary mx-2 my-1 category-highlight" data-category="lanthanoid">
+                <span class="badge rounded-circle" style="background-color: #FFD9FF; width: 20px; height: 20px; display: inline-block;"></span>
+                Lanthanoids
+            </button>
+            <button class="btn btn-outline-secondary mx-2 my-1 category-highlight" data-category="actinoid">
+                <span class="badge rounded-circle" style="background-color: #FFD9B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Actinoids
+            </button>
+            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="unknown">
+                <span class="badge rounded-circle" style="background-color: #CCCCCC; width: 20px; height: 20px; display: inline-block;"></span>
+                Unknown Properties
+            </button>
+        </div>
+    </div>
+    
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
@@ -708,26 +754,88 @@
     </footer>
 
     <!-- Element Details Modal -->
-    <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header bg-dark text-white py-4 px-5">
             <h4 class="modal-title" id="elementModalLabel">Element Details</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex flex-row">
+            <div class="modal-body d-flex flex-column flex-md-row">
             <div class="modal-image me-3">
-                <img src="" alt="Element image" style="max-width: 150px; border-radius: 5px;">
+                <img src="" alt="Element image" style="max-width: 300px; border-radius: 5px; margin-right: 50;">
             </div>
             <div class="modal-details flex-fill"></div>
             </div>
             <div class="modal-footer">
-            <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="#" class="btn btn-primary">Learn More</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
         </div>
+    </div> -->
+    <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white py-4 px-5">
+                    <h4 class="modal-title" id="elementModalLabel">-- (--)</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column flex-md-row align-items-center">
+                    <div class="modal-image me-md-4 mb-3 mb-md-0">
+                        <img src="" alt="Element image" id="elementImage" style="max-width: 300px; border-radius: 5px;">
+                    </div>
+                    <div class="table-responsive flex-fill">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Atomic Number</th>
+                                    <td id="elementAtomicNumber">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Atomic Mass</th>
+                                    <td id="elementAtomicMass">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Category</th>
+                                    <td id="elementCategory">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Electron Configuration</th>
+                                    <td id="elementElectronConfiguration">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Electronegativity</th>
+                                    <td id="elementElectronegativity">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Melting Point</th>
+                                    <td id="elementMeltingPoint">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Boiling Point</th>
+                                    <td id="elementBoilingPoint">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Standard State</th>
+                                    <td id="elementStandardState">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Radioactive</th>
+                                    <td id="elementRadioactive">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" id="learnMoreLink">Learn More</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
+    
     
 
     <!-- Bootstrap JS and Popper.js -->

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Periodic Table</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/Periodic Table/images/logo.png" sizes="196x196" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional: Custom Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap">
+
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Space for fixed navbar */
+        }
+        .hero-section {
+            background: linear-gradient(45deg, #e6f7ff, #f5fcff);
+            padding: 3rem;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #343a40;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Periodic Table/index.html">
+                <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Element Explorer
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Periodic Table/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Periodic Table/docs/periodic_table.pdf" target="_blank">Periodic Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>The Periodic Table: A Masterpiece of Chemistry</h1>
+        <p class="lead">Discover the history, structure, and significance of the periodic table.</p>
+        <img src="images/dmitri_mendeleev.jpg" alt="Dmitri Mendeleev">
+        <p class="mt-3">Dmitri Mendeleev, the creator of the modern periodic table.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Historical Background -->
+        <section>
+            <h2 class="section-title">Historical Background</h2>
+            <p>The periodic table was created by Dmitri Mendeleev in 1869. Mendeleev's genius lay in organizing elements based on their atomic mass and leaving spaces for elements yet to be discovered. His predictions about the properties of undiscovered elements were remarkably accurate, cementing the periodic table as a cornerstone of chemistry.</p>
+            <img src="images/mendeleev_table.png" alt="Mendeleev's Periodic Table" class="responsive-image">
+            <p class="mt-2 text-center">Mendeleev's first periodic table (1869).</p>
+        </section>
+
+        <!-- Structure of the Periodic Table -->
+        <section>
+            <h2 class="section-title">Structure of the Periodic Table</h2>
+            <p>The periodic table is divided into rows called <strong>periods</strong> and columns called <strong>groups</strong>. Each element is arranged based on its atomic number, which represents the number of protons in its nucleus.</p>
+            <img src="images/periodic_table_structure.png" alt="Periodic Table Structure" class="responsive-image">
+            <ul>
+                <li><strong>Periods:</strong> Horizontal rows (1 to 7) represent the principal energy levels.</li>
+                <li><strong>Groups:</strong> Vertical columns (1 to 18) group elements with similar chemical properties.</li>
+            </ul>
+        </section>
+
+        <!-- Groups and Categories -->
+        <section>
+            <h2 class="section-title">Groups and Categories</h2>
+            <p>The periodic table is further divided into categories based on shared properties:</p>
+            <ul>
+                <li><strong>Alkali Metals:</strong> Highly reactive metals in Group 1.</li>
+                <li><strong>Alkaline Earth Metals:</strong> Reactive metals in Group 2.</li>
+                <li><strong>Transition Metals:</strong> Metals in Groups 3-12 with varied properties.</li>
+                <li><strong>Lanthanides and Actinides:</strong> Rare earth elements and radioactive elements.</li>
+                <li><strong>Noble Gases:</strong> Inert gases in Group 18.</li>
+            </ul>
+            <img src="images/periodic_table_categories.jpg" alt="Periodic Table Categories" class="responsive-image">
+        </section>
+
+        <!-- Importance of the Periodic Table -->
+        <section>
+            <h2 class="section-title">Importance of the Periodic Table</h2>
+            <p>The periodic table provides a framework for understanding the relationships between chemical properties and atomic structure. It is a vital tool for predicting the behavior of elements and their compounds, advancing fields like chemistry, physics, and material science.</p>
+        </section>
+
+        <!-- Future of the Periodic Table -->
+        <section>
+            <h2 class="section-title">Future of the Periodic Table</h2>
+            <p>As scientists continue to discover new elements and explore the properties of superheavy elements, the periodic table evolves. It remains a dynamic and essential resource in scientific discovery.</p>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Extended_periodic_table" style="text-decoration: none;">Wikipedia : Extended Periodic Table</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-2">© 2025 Element Explorer</p>
+            <p>Created by:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/ankushgupta18/" target="_blank">Ankush Gupta</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Het Gohil</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/shlok-jani-a5a98732b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Shlok Jani</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Dhwani Parmar</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Siddhi Brahmabhatt</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
