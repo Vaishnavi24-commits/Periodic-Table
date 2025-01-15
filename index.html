@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="icon" href="images/logo.png" sizes="196x196" type="image/png">
     <title>Element Explorer</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Javascript -->
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Navbar Section -->
+    <!-- Navbar Section Starts Here -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -38,21 +41,25 @@
                         </li>
                     </ul>
                     <!-- Search Bar -->
-                    <form class="d-flex" role="search" id="searchForm">
+                    <form class="d-flex position-relative" role="search" id="searchForm">
                         <input id="searchInput" class="form-control me-2" type="search" placeholder="Search elements..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>                    
+                        <div id="searchRecommendations" class="dropdown-menu position-absolute w-100"></div>
+                    </form>
+                    
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Navbar Section Ends Here -->
 
     <!--Periodic Table-->
+    <!-- Element Div Ends Here -->
+    <h2 class="text-center text-warning bg-dark w-100">Periodic Table</h2>
     <div class="container-fluid periodic-table-container" id="periodic-table">
-        <h2 class="text-center text-warning bg-dark">Periodic Table</h2>
         <div class="periodic-table">
             <!-- Row 1 -->
-            <div class="element other-metal" style="grid-column: 1;">
+            <div class="element nonmetal" style="grid-column: 1;">
                 <div class="atomic-number">1</div>
                 <div class="symbol">H</div>
                 <div class="name">Hydrogen</div>
@@ -522,8 +529,8 @@
 
         </div>
 
-        <h3 class="text-center mt-5">Lanthanides and Actinides</h3>
-        <div class="container-fluid mt-3 lanthanidesAndActinides periodic-table-container">
+        <h3 class="text-center mt-2">Lanthanides and Actinides</h3>
+        <div class="container-fluid mt-2 lanthanidesAndActinides periodic-table-container">
             <div class="periodic-table">
                 <div class="element lanthanoid" style="grid-column: 1;">
                     <div class="atomic-number">57</div>
@@ -680,7 +687,9 @@
             </div>
         </div>
     </div>
+    <!-- Element Div Ends Here -->
 
+    <!-- Category Buttons Start Here -->
     <div class="container mt-5">
         <div class="d-flex flex-wrap justify-content-center mt-3">
             <button class="btn btn-outline-primary mx-2 my-1 category-highlight" data-category="alkali-metal">
@@ -695,7 +704,7 @@
                 <span class="badge rounded-circle" style="background-color: #D4E4FF; width: 20px; height: 20px; display: inline-block;"></span>
                 Transition Metals
             </button>
-            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="post-transition-metal">
+            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="other-metal">
                 <span class="badge rounded-circle" style="background-color: #FFC4C4; width: 20px; height: 20px; display: inline-block;"></span>
                 Post-transition Metals
             </button>
@@ -703,9 +712,13 @@
                 <span class="badge rounded-circle" style="background-color: #FFFFB3; width: 20px; height: 20px; display: inline-block;"></span>
                 Metalloids
             </button>
-            <button class="btn btn-outline-info mx-2 my-1 category-highlight" data-category="reactive-nonmetal">
+            <button class="btn btn-outline-info mx-2 my-1 category-highlight" data-category="nonmetal">
                 <span class="badge rounded-circle" style="background-color: #FFFFD4; width: 20px; height: 20px; display: inline-block;"></span>
                 Reactive Non-metals
+            </button>
+            <button class="btn btn-outline-dark mx-2 my-1 category-highlight" data-category="halogen">
+                <span class="badge rounded-circle" style="background-color: #c4ffc4; width: 20px; height: 20px; display: inline-block;"></span>
+                Halogens
             </button>
             <button class="btn btn-outline-dark mx-2 my-1 category-highlight" data-category="noble-gas">
                 <span class="badge rounded-circle" style="background-color: #B3FFFF; width: 20px; height: 20px; display: inline-block;"></span>
@@ -719,61 +732,39 @@
                 <span class="badge rounded-circle" style="background-color: #FFD9B3; width: 20px; height: 20px; display: inline-block;"></span>
                 Actinoids
             </button>
-            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="unknown">
-                <span class="badge rounded-circle" style="background-color: #CCCCCC; width: 20px; height: 20px; display: inline-block;"></span>
-                Unknown Properties
-            </button>
         </div>
     </div>
+    <!-- Category Buttons Ends Here -->
     
 
 
-    <!-- Footer -->
+    <!-- Footer Start Here -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container-fluid" style="width: 100%;">
             <p class="mb-2">© 2025 Periodic Table Explorer</p>
             <p class="mb-0">Created by:</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 1</a>
+                    <a href="https://www.linkedin.com/in/ankushgupta18/" target="_blank" class="text-white text-decoration-none">Ankush Gupta</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 2</a>
+                    <a href="#" target="_blank" class="text-white text-decoration-none">Het Gohil</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 3</a>
+                    <a href="https://www.linkedin.com/in/shlok-jani-a5a98732b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white text-decoration-none">Shlok Jani</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 4</a>
+                    <a href="#" target="_blank" class="text-white text-decoration-none">Dhwani Parmar</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 5</a>
+                    <a href="#" target="_blank" class="text-white text-decoration-none">Siddhi Brahmabhatt</a>
                 </li>
             </ul>
         </div>
     </footer>
+    <!-- Footer End -->
 
-    <!-- Element Details Modal -->
-    <!-- <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header bg-dark text-white py-4 px-5">
-            <h4 class="modal-title" id="elementModalLabel">Element Details</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex flex-column flex-md-row">
-            <div class="modal-image me-3">
-                <img src="" alt="Element image" style="max-width: 300px; border-radius: 5px; margin-right: 50;">
-            </div>
-            <div class="modal-details flex-fill"></div>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn btn-primary">Learn More</a>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-        </div>
-    </div> -->
+    <!-- Modal Start Here -->
     <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -781,11 +772,11 @@
                     <h4 class="modal-title" id="elementModalLabel">-- (--)</h4>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body d-flex flex-column flex-md-row align-items-center">
-                    <div class="modal-image me-md-4 mb-3 mb-md-0">
-                        <img src="" alt="Element image" id="elementImage" style="max-width: 300px; border-radius: 5px;">
+                <div class="modal-body">
+                    <div class="modal-image text-center mb-4">
+                        <img src="" alt="Element image" id="elementImage" style="max-width: 300px; border-radius: 5px; width: 100%;">
                     </div>
-                    <div class="table-responsive flex-fill">
+                    <div class="table-responsive">
                         <table class="table table-bordered table-striped">
                             <tbody>
                                 <tr>
@@ -835,6 +826,7 @@
             </div>
         </div>
     </div>
+    <!-- Modal End Here -->
     
     
 

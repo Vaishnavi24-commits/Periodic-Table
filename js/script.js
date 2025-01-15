@@ -1651,7 +1651,6 @@ const elementsData = {
 
 };
 
-
 // script.js
 
 /******************************************
@@ -1908,3 +1907,98 @@ function highlightCategory(categoryClass) {
 }
 
 
+const searchInput = document.getElementById("searchInput");
+const searchRecommendations = document.getElementById("searchRecommendations");
+let activeIndex = -1; // For keyboard navigation
+
+// Debounce function
+function debounce(func, delay) {
+    let timeout;
+    return function (...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+// Highlight matching text
+function highlightMatch(text, query) {
+    const regex = new RegExp(`(${query})`, "gi");
+    return text.replace(regex, "<strong>$1</strong>");
+}
+
+// Render recommendations
+function renderRecommendations(query) {
+    searchRecommendations.innerHTML = ""; // Clear previous recommendations
+    if (!query) {
+        searchRecommendations.style.display = "none";
+        activeIndex = -1;
+        return;
+    }
+
+    const filteredElements = Object.values(elementsData).filter(element => {
+        return (
+            element.name.toLowerCase().includes(query) ||
+            element.symbol.toLowerCase().includes(query) ||
+            element.atomicNumber.toString().startsWith(query)
+        );
+    });
+
+    if (filteredElements.length === 0) {
+        const noResultItem = document.createElement("a");
+        noResultItem.className = "dropdown-item disabled";
+        noResultItem.textContent = "No results found";
+        searchRecommendations.appendChild(noResultItem);
+        searchRecommendations.style.display = "block";
+        return;
+    }
+
+    filteredElements.forEach((element, index) => {
+        const recommendationItem = document.createElement("a");
+        recommendationItem.className = "dropdown-item";
+        recommendationItem.href = "#";
+        recommendationItem.innerHTML = `${highlightMatch(element.name, query)} (${highlightMatch(element.symbol, query)}) : ${highlightMatch(element.atomicNumber.toString(), query)}`;
+
+        // Handle click on a recommendation
+        recommendationItem.addEventListener("click", (e) => {
+            e.preventDefault();
+            searchInput.value = element.name; // Populate the input with the clicked item
+            searchRecommendations.innerHTML = ""; // Clear recommendations
+            searchRecommendations.style.display = "none";
+        });
+
+        searchRecommendations.appendChild(recommendationItem);
+    });
+
+    searchRecommendations.style.display = "block";
+    activeIndex = -1; // Reset active index for keyboard navigation
+}
+
+// Debounced input event listener
+searchInput.addEventListener(
+    "input",
+    debounce(() => {
+        const query = searchInput.value.trim().toLowerCase();
+        renderRecommendations(query);
+    }, 300)
+);
+
+// Keyboard navigation for recommendations
+searchInput.addEventListener("keydown", (e) => {
+    const items = Array.from(searchRecommendations.querySelectorAll(".dropdown-item:not(.disabled)"));
+    if (e.key === "ArrowDown") {
+        e.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+        items.forEach((item, index) => {
+            item.classList.toggle("active", index === activeIndex);
+        });
+    } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        items.forEach((item, index) => {
+            item.classList.toggle("active", index === activeIndex);
+        });
+    } else if (e.key === "Enter" && activeIndex >= 0) {
+        e.preventDefault();
+        items[activeIndex].click();
+    }
+});

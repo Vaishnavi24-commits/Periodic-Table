@@ -67,7 +67,7 @@ The central page displaying the periodic table with interactive features:
 - Dynamic modals to view detailed element information.
 - Group filtering buttons to highlight specific categories like alkali metals or noble gases.
 
-### **Element Details Page** (`details/{element}.html`)
+### **Element Details Page** (`details/{elementname}.html`)
 Each element has a dedicated page that provides:
 - Atomic properties: mass, number, configuration, state, etc.
 - History of the element’s discovery.
@@ -129,9 +129,4 @@ An in-depth page about the periodic table, covering:
 - Het Gohil
 - [Shlok Jani](https://www.linkedin.com/in/shlok-jani-a5a98732b/)
 - Dhwani Parmar
-- Suddhi Brahmabhatt
-
----
-
-## License
-This project is open-source and available under the MIT License. See the LICENSE file for more information.
+- Siddhi Brahmabhatt
