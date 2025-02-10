@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
     <link rel="icon" href="images/logo.png" sizes="196x196" type="image/png">
     <title>Element Explorer</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
+    <!-- Javascript -->
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <!-- Navbar Section -->
+    <!-- Navbar Section Starts Here -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
@@ -28,31 +31,35 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#periodic-table">Periodic Table</a>
+                            <a class="nav-link" href="/Periodic Table/docs/periodic_table.pdf" target="_blank">Periodic Table</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                     </ul>
                     <!-- Search Bar -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search elements..." aria-label="Search">
+                    <form class="d-flex position-relative" role="search" id="searchForm">
+                        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search elements..." aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
+                        <div id="searchRecommendations" class="dropdown-menu position-absolute w-100"></div>
                     </form>
+                    
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Navbar Section Ends Here -->
 
     <!--Periodic Table-->
+    <!-- Element Div Ends Here -->
+    <h2 class="text-center text-warning bg-dark w-100">Periodic Table</h2>
     <div class="container-fluid periodic-table-container" id="periodic-table">
-        <h2 class="text-center text-warning bg-dark">Periodic Table</h2>
         <div class="periodic-table">
             <!-- Row 1 -->
-            <div class="element other-metal"  style="grid-column: 1;">
+            <div class="element nonmetal" style="grid-column: 1;">
                 <div class="atomic-number">1</div>
                 <div class="symbol">H</div>
                 <div class="name">Hydrogen</div>
@@ -348,7 +355,7 @@
             </div>
             <div class="element lanthanoid" style="grid-column: 3;">
                 <div class="atomic-number">57</div>
-                <div class="symbol">Ln</div>
+                <div class="symbol">La</div>
                 <div class="name">Lanthanides</div>
             </div>
             <div class="element transition-metal" style="grid-column: 4;">
@@ -522,8 +529,8 @@
 
         </div>
 
-        <h3 class="text-center mt-5">Lanthanides and Actinides</h3>
-        <div class="container-fluid mt-3 lanthanidesAndActinides periodic-table-container">
+        <h3 class="text-center mt-2">Lanthanides and Actinides</h3>
+        <div class="container-fluid mt-2 lanthanidesAndActinides periodic-table-container">
             <div class="periodic-table">
                 <div class="element lanthanoid" style="grid-column: 1;">
                     <div class="atomic-number">57</div>
@@ -680,39 +687,149 @@
             </div>
         </div>
     </div>
+    <!-- Element Div Ends Here -->
 
-    
+    <!-- Category Buttons Start Here -->
+    <div class="container mt-5">
+        <div class="d-flex flex-wrap justify-content-center mt-3">
+            <button class="btn btn-outline-primary mx-2 my-1 category-highlight" data-category="alkali-metal">
+                <span class="badge rounded-circle" style="background-color: #FFB3B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Alkali Metals
+            </button>
+            <button class="btn btn-outline-secondary mx-2 my-1 category-highlight" data-category="alkaline-earth-metal">
+                <span class="badge rounded-circle" style="background-color: #FFE4B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Alkaline Earth Metals
+            </button>
+            <button class="btn btn-outline-success mx-2 my-1 category-highlight" data-category="transition-metal">
+                <span class="badge rounded-circle" style="background-color: #D4E4FF; width: 20px; height: 20px; display: inline-block;"></span>
+                Transition Metals
+            </button>
+            <button class="btn btn-outline-danger mx-2 my-1 category-highlight" data-category="other-metal">
+                <span class="badge rounded-circle" style="background-color: #FFC4C4; width: 20px; height: 20px; display: inline-block;"></span>
+                Post-transition Metals
+            </button>
+            <button class="btn btn-outline-warning mx-2 my-1 category-highlight" data-category="metalloid">
+                <span class="badge rounded-circle" style="background-color: #FFFFB3; width: 20px; height: 20px; display: inline-block;"></span>
+                Metalloids
+            </button>
+            <button class="btn btn-outline-info mx-2 my-1 category-highlight" data-category="nonmetal">
+                <span class="badge rounded-circle" style="background-color: #FFFFD4; width: 20px; height: 20px; display: inline-block;"></span>
+                Reactive Non-metals
+            </button>
+            <button class="btn btn-outline-dark mx-2 my-1 category-highlight" data-category="halogen">
+                <span class="badge rounded-circle" style="background-color: #c4ffc4; width: 20px; height: 20px; display: inline-block;"></span>
+                Halogens
+            </button>
+            <button class="btn btn-outline-dark mx-2 my-1 category-highlight" data-category="noble-gas">
+                <span class="badge rounded-circle" style="background-color: #B3FFFF; width: 20px; height: 20px; display: inline-block;"></span>
+                Noble Gases
+            </button>
+            <button class="btn btn-outline-primary mx-2 my-1 category-highlight" data-category="lanthanoid">
+                <span class="badge rounded-circle" style="background-color: #FFD9FF; width: 20px; height: 20px; display: inline-block;"></span>
+                Lanthanoids
+            </button>
+            <button class="btn btn-outline-secondary mx-2 my-1 category-highlight" data-category="actinoid">
+                <span class="badge rounded-circle" style="background-color: #FFD9B3; width: 20px; height: 20px; display: inline-block;"></span>
+                Actinoids
+            </button>
+        </div>
+    </div>
+    <!-- Category Buttons Ends Here -->
 
-    
-
-    
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container-fluid" style="width: 100%;">
-            <p class="mb-2">© 2025 Periodic Table Explorer</p>
-            <p class="mb-0">Created by:</p>
+    <!-- Modal Start Here -->
+    <div class="modal fade" id="elementModal" tabindex="-1" aria-labelledby="elementModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white py-4 px-5">
+                    <h4 class="modal-title" id="elementModalLabel">-- (--)</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image text-center mb-4">
+                        <img src="" alt="Element image" id="elementImage" style="max-width: 300px; border-radius: 5px; width: 100%;">
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Atomic Number</th>
+                                    <td id="elementAtomicNumber">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Atomic Mass</th>
+                                    <td id="elementAtomicMass">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Category</th>
+                                    <td id="elementCategory">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Electron Configuration</th>
+                                    <td id="elementElectronConfiguration">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Electronegativity</th>
+                                    <td id="elementElectronegativity">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Melting Point</th>
+                                    <td id="elementMeltingPoint">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Boiling Point</th>
+                                    <td id="elementBoilingPoint">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Standard State</th>
+                                    <td id="elementStandardState">--</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Radioactive</th>
+                                    <td id="elementRadioactive">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary" id="learnMoreLink">Learn More</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End Here -->
+    <footer class="bg-dark text-white my-5">
+        <div class="container-fluid text-center py-3">
+            <p class="mb-2">© 2025 Element Explorer</p>
+            <p>Created by:</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 1</a>
+                    <a href="https://www.linkedin.com/in/ankushgupta18/" target="_blank" class="text-white">Ankush Gupta</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 2</a>
+                    <a href="#" class="text-white">Het Gohil</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 3</a>
+                    <a href="https://www.linkedin.com/in/shlok-jani-a5a98732b/" target="_blank" class="text-white">Shlok Jani</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 4</a>
+                    <a href="#" class="text-white">Dhwani Parmar</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#" class="text-white text-decoration-none">Creator 5</a>
+                    <a href="#" class="text-white">Siddhi Brahmabhatt</a>
                 </li>
             </ul>
         </div>
     </footer>
     
+    
+    
 
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

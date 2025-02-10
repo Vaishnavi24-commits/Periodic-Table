@@ -11,7 +11,7 @@ const elementsData = {
         boilingPoint: "-252.87 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/h.webp"
+        image: "images/h.png"
     },
     He: {
         atomicNumber: 2,
@@ -25,7 +25,7 @@ const elementsData = {
         boilingPoint: "-268.93 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/he.webp"
+        image: "images/he.png"
     },
     Li: {
         atomicNumber: 3,
@@ -39,7 +39,7 @@ const elementsData = {
         boilingPoint: "1342 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/li.webp"
+        image: "images/li.png"
     },
     Be: {
         atomicNumber: 4,
@@ -53,7 +53,7 @@ const elementsData = {
         boilingPoint: "2469 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/be.webp"
+        image: "images/be.png"
     },
     B: {
         atomicNumber: 5,
@@ -67,7 +67,7 @@ const elementsData = {
         boilingPoint: "3927 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/b.webp"
+        image: "images/b.png"
     },
     C: {
         atomicNumber: 6,
@@ -81,7 +81,7 @@ const elementsData = {
         boilingPoint: "4827 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/c.webp"
+        image: "images/c.png"
     },
     N: {
         atomicNumber: 7,
@@ -95,7 +95,7 @@ const elementsData = {
         boilingPoint: "-195.8 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/n.webp"
+        image: "images/n.png"
     },
     O: {
         atomicNumber: 8,
@@ -109,7 +109,7 @@ const elementsData = {
         boilingPoint: "-182.96 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/o.webp"
+        image: "images/o.png"
     },
     F: {
         atomicNumber: 9,
@@ -123,7 +123,7 @@ const elementsData = {
         boilingPoint: "-188.12 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/f.webp"
+        image: "images/f.png"
     },
     Ne: {
         atomicNumber: 10,
@@ -137,7 +137,7 @@ const elementsData = {
         boilingPoint: "-246.08 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/ne.webp"
+        image: "images/ne.png"
     },
     Na: {
         atomicNumber: 11,
@@ -151,7 +151,7 @@ const elementsData = {
         boilingPoint: "883 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/na.webp"
+        image: "images/na.png"
     },
     Mg: {
         atomicNumber: 12,
@@ -165,7 +165,7 @@ const elementsData = {
         boilingPoint: "1090 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/mg.webp"
+        image: "images/mg.png"
     },
     Al: {
         atomicNumber: 13,
@@ -179,7 +179,7 @@ const elementsData = {
         boilingPoint: "2519 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/al.webp"
+        image: "images/al.png"
     },
     Si: {
         atomicNumber: 14,
@@ -193,7 +193,7 @@ const elementsData = {
         boilingPoint: "3265 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/si.webp"
+        image: "images/si.png"
     },
     P: {
         atomicNumber: 15,
@@ -207,7 +207,7 @@ const elementsData = {
         boilingPoint: "280.5 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/p.webp"
+        image: "images/p.png"
     },
     S: {
         atomicNumber: 16,
@@ -221,7 +221,7 @@ const elementsData = {
         boilingPoint: "444.72 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/s.webp"
+        image: "images/s.png"
     },
     Cl: {
         atomicNumber: 17,
@@ -235,7 +235,7 @@ const elementsData = {
         boilingPoint: "-34.04 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/cl.webp"
+        image: "images/cl.png"
     },
     Ar: {
         atomicNumber: 18,
@@ -249,7 +249,7 @@ const elementsData = {
         boilingPoint: "-185.8 °C",
         standardState: "Gas",
         isRadioactive: false,
-        image: "images/ar.webp"
+        image: "images/ar.png"
     },
     K: {
         atomicNumber: 19,
@@ -263,7 +263,7 @@ const elementsData = {
         boilingPoint: "759 °C",
         standardState: "Solid",
         isRadioactive: false,
-        image: "images/k.webp"
+        image: "images/k.png"
     },
     Ca: {
         atomicNumber: 20,
@@ -1227,7 +1227,7 @@ const elementsData = {
         boilingPoint: "1737 °C",
         standardState: "Solid",
         isRadioactive: true,
-        image: "images/ra.webp"
+        image: "images/ra.png"
     },
     Ac: {
         atomicNumber: 89,
@@ -1297,7 +1297,7 @@ const elementsData = {
         boilingPoint: "3902 °C",
         standardState: "Solid",
         isRadioactive: true,
-        image: "images/np.webp"
+        image: "images/np.png"
     },
     Pu: {
         atomicNumber: 94,
