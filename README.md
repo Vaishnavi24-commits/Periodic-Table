@@ -126,7 +126,7 @@ An in-depth page about the periodic table, covering:
 ## Contributors
 
 - [Ankush Gupta](https://www.linkedin.com/in/ankushgupta18/)
-- Het Gohil
+- [Het Gohil](https://www.linkedin.com/in/het-gohil/)
 - [Shlok Jani](https://www.linkedin.com/in/shlok-jani-a5a98732b/)
-- Dhwani Parmar
-- Siddhi Brahmabhatt
+- [Dhwani Parmar](https://www.linkedin.com/in/dhwani-parmar-6a7bb1346/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- [Siddhi Brahmabhatt](https://www.linkedin.com/in/siddhi-brahmbhatt-482590347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
